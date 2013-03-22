@@ -2,7 +2,7 @@
 ## The Big IdeaImmigrants have been the engine of growth for the US since its founding as a nation. But that engine may be stalling after years of bitter debate over how to treat immigrants.The Immigrant Success Index aims to add hard facts and aha’s to the public debate about immigrants and immigration reform. Today’s debate and media coverage frames issues as “us” versus “them”, as legal versus illegal, and as faceless people versus neighbors, friends and colleagues. The political climate is opening now for a richer discussion and we want to enrich the debate. We plan to do that by telling personal stories about immigrant life here and uncovering the cities where immigrants are more likely to succeed and what policies, services and factors help or hurt them.## The Partners
 * **[Public Radio International (PRI)](http://www.pri.org/)** is the second leading distributor of public radio shows after NPR. We produce and/or distribute shows like This American Life, The World, Afropop, Studio360 and Tavis Smiley. Our mission is to give people the information, insights and cultural experiences they need to live in a diverse, interconnected world. And we have a major initiative to reach and engage immigrants in the US to bring their voices into public debate, provide unbiased stories of their role and experiences in our society, and get all Americans involved in Siguring out our approach to immigrants and immigration. PRI is creating the Index as a way to help local journalists and citizens tell true stories about immigrant life in America as well as city policy makers who are interested in attracting and engaging their immigrant populations.* **[The Migration Policy Institute (MPI)](http://www.migrationpolicy.org/)** is an independent, nonpartisan, nonproSit think tank in Washington, DC dedicated to analyzing the movement of people worldwide. It believes that sound immigration and integration policies result from balanced analysis, solid data, and the engagement of a spectrum of stakeholders — from community leaders and immigrant organizations to the policy elite — interested in immigration policy and its human consequences. MPI is gathering the data and providing the analytic smarts to ensure the Immigrant Success Index is as accurate, honest and revealing as possible.
 ## The DataBase 
-The dataBase consist on 3 samples made between 2000,2005 and 2010 over the following 25 cities (selected out of the 100 most populous cities in the United States)![cities](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/cities.png)
+The dataBase consist on 3 samples made between 2000,2005 and 2010 over the following 25 cities (selected out of the 100 most populous cities in the United States)![cities](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/cities.png)
 	Baltimore, MD +++		Boise City, ID +++	
 	Boulder, CO +++ 		Charlotte, SC ++
 	Columbus, OH ++ 		Dayton, OH +++
@@ -33,11 +33,11 @@ entertainment; medicine and education – and the prosperity of cities. [More in
 [The data base received](https://docs.google.com/file/d/0B9yD5YLwxGTIck8zUS1adGRuVEk/edit?usp=sharing) was a MS Excel document with a big table with the three years census one next to the other. In order to work and process the data it was necessary to:
 
 *	Transform the dataBase from an MS Excel file into a [Google Spreadsheet one](https://docs.google.com/spreadsheet/ccc?key=0AsKqVj4h_cOwdDlTMGRfMGtxOFFrY0gxc1lZdGZFbFE&usp=sharing)
-*	Match the name of the Cities and States according to the [project_overview.pdf](https://github.com/patriciogonzalezvivo/DataToys/blob/master/Making_it_in_America/doc/project_overview.pdf?raw=true)
-*	Separate the cities in a different table ( [```cities.csv```](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/data/cities.csv) ) and replace it by IDs. This separation makes the information of the city independent of the three samples
+*	Match the name of the Cities and States according to the [project_overview.pdf](https://github.com/PetLabDataToys/Making_it_in_America_API/blob/master/doc/project_overview.pdf?raw=true)
+*	Separate the cities in a different table ( [```cities.csv```](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/data/cities.csv) ) and replace it by IDs. This separation makes the information of the city independent of the three samples
 *	Research the geographical location of the cities (Lat & Long)
 *	Add the selection criteria of each city
-*	Split the samples according to the three years and export them as CSV (comma separated values) files: [```2000.csv```](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/data/2000.csv), [```2005.csv```](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/data/2005.csv) and [```2010.csv```](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/data/2010.csv) 
+*	Split the samples according to the three years and export them as CSV (comma separated values) files: [```2000.csv```](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/data/2000.csv), [```2005.csv```](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/data/2005.csv) and [```2010.csv```](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/data/2010.csv) 
 	
 ## The DataBase and the openSource C++ API for openFrameworks
 
@@ -48,21 +48,21 @@ This tools are wrote on openFrameworks. So we first need to install openFramewor
 1. The first thing to do is [download and install openFrameworks](http://www.openframeworks.cc/download/)
 
 2. After that download this repo by clicking on the "ZIP" button:
-![github](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/github.png)
+![github](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/github.png)
 
 3. Once it's downloaded, UnZip it (sometimes you just need to double click over it) and then drag it to the the root directory of your openFrameworks folder.
 
-![github](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/apps.png)
+![github](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/apps.png)
 
 From that you can compile and see the project examples.
 
 If you are interested on making your own project you need:
 
-1. You need to copy the [.csv files](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data) ( [```cities.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/cities.csv), [```2000.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/2000.csv), [```2005.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/2005.csv) and [```2010.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/2010.csv)) to the ```bin/data``` folder on your openFrameworks project.
+1. You need to copy the [.csv files](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data) ( [```cities.csv```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data/cities.csv), [```2000.csv```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data/2000.csv), [```2005.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/2005.csv) and [```2010.csv```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data/2010.csv)) to the ```bin/data``` folder on your openFrameworks project.
 
-2. Then you also need to copy the [```.h``` and ```.cpp``` files in the src folder](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src) ( [```MpiElements.h```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src/MpiElements.h), [```MpiData.h```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src/MpiData.h) and [```MpiData.cpp```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src/MpiData.cpp) ) to your ```src/``` folder on your openFrameworks project. 
+2. Then you also need to copy the [```.h``` and ```.cpp``` files in the src folder](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/src) ( [```MpiElements.h```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/src/MpiElements.h), [```MpiData.h```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src/MpiData.h) and [```MpiData.cpp```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/src/MpiData.cpp) ) to your ```src/``` folder on your openFrameworks project. 
 
-3. In order to use the dataBase you need to declare a ```MpiData``` object on your ```testApp.h``` together with the ```#include ``` call to the [```MpiData.h```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src/MpiData.h) header file.
+3. In order to use the dataBase you need to declare a ```MpiData``` object on your ```testApp.h``` together with the ```#include ``` call to the [```MpiData.h```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/src/MpiData.h) header file.
 
 That should look like:
 
@@ -94,9 +94,9 @@ That should look like:
 After doing this you are ready to load and use the data base.
 
 ### Elements
-The elements that are going to be use for the API are defined at [```MpiElements.h```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src/MpiElements.h) and it's composed by: 
+The elements that are going to be use for the API are defined at [```MpiElements.h```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/src/MpiElements.h) and it's composed by: 
 
-* ```mpiCity```: this object contain the information of the chosen cities and is populated with the [```cities.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/cities.csv). The object contain the following variables
+* ```mpiCity```: this object contain the information of the chosen cities and is populated with the [```cities.csv```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data/cities.csv). The object contain the following variables
 
 		int     nId;   		//	This is used to cross the information between tables		
     	string  name;       //  Name of the City. Ex: "New York"
@@ -117,7 +117,7 @@ The elements that are going to be use for the API are defined at [```MpiElements
 		MPI_CITY_FASTEST_GROWING        //  10 cities with fastest growing foreing-born pop
 		MPI_CITY_ACTIVE_RECRUITING       //  5 cities most actively cruiting the foreing born
 
-* ```mpiNumValue```: the tables [```2000.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/2000.csv), [```2005.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/2005.csv) and [```2010.csv```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/data/2010.csv) contain integer information of population together with percentages. ```mpiNumValue``` is a variable type that referee to those integers one that hold total amount of persons. As you can see the last three values are based on people over 16+ years old. This variable could be one of the following values 
+* ```mpiNumValue```: the tables [```2000.csv```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data/2000.csv), [```2005.csv```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data/2005.csv) and [```2010.csv```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/data/2010.csv) contain integer information of population together with percentages. ```mpiNumValue``` is a variable type that referee to those integers one that hold total amount of persons. As you can see the last three values are based on people over 16+ years old. This variable could be one of the following values 
 
 		MPI_NUM_POPULATION
 		MPI_NUM_IMMIGRANTS
@@ -151,7 +151,7 @@ The elements that are going to be use for the API are defined at [```MpiElements
 
     	MPI_PCT_CREATIVE_CLASS
 
-For a more information about this values please read this [overview of the data](https://github.com/PetLabDataToy/Making_it_in_America_API/raw/master/doc/data_overview.pdf)
+For a more information about this values please read this [overview of the data](https://github.com/PetLabDataToys/Making_it_in_America_API/raw/master/doc/data_overview.pdf)
 
 
 * ```mpiCitySample```: this is the object that holds all the data from each city in a particular year. Beside the variables that holds this information is important to know that there are three functions that let you request and transform values:
@@ -166,7 +166,7 @@ It's important to know that if you are getting a ```-1``` it's because the infor
 
 ### DataBase Motor 
 
-* [```MpiData```](https://github.com/PetLabDataToy/Making_it_in_America_API/tree/master/src/MpiData.h): This object represent the core of this API. It's an C++ object ready for loading the .csv and process it information. Once this files are loads you can make request asking for specific information. The methods are
+* [```MpiData```](https://github.com/PetLabDataToys/Making_it_in_America_API/tree/master/src/MpiData.h): This object represent the core of this API. It's an C++ object ready for loading the .csv and process it information. Once this files are loads you can make request asking for specific information. The methods are
 
 
 		//		Loading of the information
@@ -280,22 +280,22 @@ For exploring more features and possibilities take a look to following examples
 #### DataVisualizer Basic
 This is a simple example how to use the data-base by making simple searches, charts and city requests. Together with this example you will found another project compiled to iPhone. This is a great place to start knowing a little better about the data-base and brain storming some ideas of what to do with it.
 
-![chart](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/chart.png)
+![chart](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/chart.png)
 
 #### DataVisualizer Comp
 This is a little more complex example that gives you an idea to how compear and explore on the database for patterns by making comparisons.
 
-![chart_comp](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/comp.png)
+![chart_comp](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/comp.png)
 
 #### GeoDataLocator Basic
 This is another super simple example of how to put data on the map. This map is using [ModestMap API](http://modestmaps.com/) thanks to [Tom Carden project for OF](https://github.com/RandomEtc/modestmaps-of) how mades a oF wrapper that load the content from the web. It's just like google maps. This is just a starting for start thinking and prototyping awesome ideas. 
 
-![cities](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/cities.png)
+![cities](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/cities.png)
 
 #### GeoDataLocator Comp
 A little more complex project that use the [ModestMap](http://modestmaps.com/) is this one where you can search and compare values of our dataBase by pointing in one direction inside the map. The idea is this could be on your phone an by knowing where are you and in what direction are you pointing show you different information
-![map](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/map.png)
+![map](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/map.png)
 
 #### WDB 3D map
 This is essentially the same thing than the last two examples but on 3D. It's using an [CIA World DataBank](http://www.evl.uic.edu/pape/data/WDB/) witch is very big and precise. It takes time to load all those point but the result looks just like Tron and WarGames at the same time.
-![map](https://raw.github.com/PetLabDataToy/Making_it_in_America_API/master/images/WDB.png)
+![map](https://raw.github.com/PetLabDataToys/Making_it_in_America_API/master/images/WDB.png)
